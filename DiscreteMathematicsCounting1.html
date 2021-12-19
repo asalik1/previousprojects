@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+
+<html>
+
+<title>Counting</title>
+
+<style type="text/css">
+
+.tab { margin-left: 40px; }
+
+</style>
+
+<body background="https://i.imgur.com/bXOPJHa.png">
+
+
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+	<title>3 Column Layout</title>
+
+
+	<style type="text/css">
+
+		/* Layout */
+
+		#center {
+
+			padding: 0px 30px;
+
+
+			width: 95%;
+		}
+
+
+
+		html body {
+
+			overflow: auto;
+
+		}
+
+
+		body {
+
+			margin: 0;
+
+
+			padding: 0;
+
+
+			font-family:Times New Roman;
+
+
+			line-height: 2em;
+
+
+			padding-bottom: 50px;
+
+		}
+
+
+		p {
+
+			color: #000000;
+
+		}
+
+	</style>
+
+<center>
+
+	<h1>
+
+	 Discrete Mathematics: Counting
+
+	</h1>
+
+</center>
+
+<hr>
+
+	<main id="center" class="column">
+
+
+		<article>	
+
+
+	<h1>Introduction</h1>
+
+
+		<p>
+
+			Although counting sounds like something that a
+
+
+			child would learn in elementary school, it is something
+
+
+			that is necessary to review and practice, even for college students.
+
+
+			The basics of counting are focused on addition and multiplication. With enough practice and knowledge
+
+
+			of the basics in counting, we will begin working with more complicated topics like
+
+
+			combinations and permutations. These 4 topics can be implemented in many different ways in real life as you will see in the provided examples.
+
+		</p>
+
+<hr>
+
+			<h1>Addition Rule</h1>
+
+
+				<p> The addition rule is the number of outcomes for each choice added to together.
+
+
+				For two choices: |O1+O2| = |O1| + |O2|, where O is the number of outcomes for a specific choice.
+
+
+				If there were more choices we would add the number of outcomes for each extra choice we would make.
+
+
+				A general idea about addition is that it is used when we see the word ''or.''
+
+
+				</p>
+
+
+				<p><strong>Example</strong>: In a deck of cards, how many cards are a 9 or a 6? </p>
+<center>
+<img src="https://i.imgur.com/eBRsKEj.png" height="225" width="425">
+</center>
+
+
+				<p class="tab"> Solution: There are four cards of 9 and four cards of 6 in a deck of cards. Since we are
+
+
+				asked for the total number of 9 or a 6 in the deck, we add the amount of each together.
+
+
+				4 + 4 = 8. There are 8 cards in the deck that are a 9 or 6. </p>
+
+
+<hr>
+
+
+			<h1>Multiplication Rule</h1>
+
+
+				<p> The multiplication rule is based on the number of outcomes per choice multiplied together.
+
+
+				For two choices: |O1 x O2| = |O1| x |O2|, where O is the number of outcomes for a specific choice.
+
+
+				We would multiply by more outcomes if there were more choices in a question. </p>
+
+
+				<p> A general idea about the multiplication rule is that we relate the word ''and'' to our questions. </p>
+
+
+				<p><strong>Example</strong>: If you want to buy an outfit with a shirt, pants and socks, how many different outfits
+
+
+				can you choose from 3 shirts, 2 pairs of pants, and 2 pairs of socks? </p>
+<center>
+<img src= "https://imgur.com/Wt5f2pr.png" height="240" width="350">
+</center>
+
+
+				<p class="tab"> Solution: Outcomes for shirts is 3, Outcomes for pants is 2 and Outcomes for socks is 2.
+
+
+				So you would use the formula, |O1| x |O2| x |O3| = 3 x 2 x 2 = 12 possible outfits.</p>
+
+
+
+				<p><strong>Example 2</strong>: How many possible ways are there to choose one drink from 3 juices and 4 sodas? </p>
+
+
+<center>
+<img src=" https://i.imgur.com/uXGGPsD.png" height="200" width="350">
+</center>
+
+				<p class="tab"> Solution: There 7 possible ways since we have a total of 7 choices after adding up the amount of drinks.
+
+
+				Since we can only choose one out of the given number of drinks, we add the total number of drinks to get the
+
+
+				possible amount we can choose, even though the word "and" is used. </p>
+
+<hr>
+
+
+			<h1>Permutations</h1>
+
+
+				<p>A permuatation refers to an arrangement of a set of members into a an ordered sequence.
+
+
+				To calculate the number of possible ordered arrangements, we have to use the formula for permutations.
+
+
+				The formula for calculating permuations is shown as:</p>
+
+
+<center>
+
+
+<img src="https://i.imgur.com/RjDLrIO.png" width="450" height="180">
+
+
+</center>
+
+
+				<p>The variable "n" refers to the number of members in the total set, and the variable
+
+
+				"r" refers to the number of members from the total set that we want to arrange.</p>
+
+
+				<p><strong>Example</strong>: A license plate begins with three letters.
+
+
+				 If the possible letters are A, B, C, D and E, how many different permutations of these letters
+
+
+				 can be made if no letter is used more than once?</p>
+
+
+				<p>Solution:</p>
+
+
+				<img src="https://i.imgur.com/2F96YoW.png" alt="The answer is 60." class="tab">
+
+<hr>
+
+			<h1>Combinations</h1>
+
+
+				<p>A combination refers to an arrangement of a set of members into a an unordered sequence.
+
+
+				To calculate the number of possible ordered arrangements, we have to use the formula for combinations.</p>
+
+
+				<p>The formula for calculating combinations is shown as:</p>
+
+<center>
+
+
+<img src="https://i.imgur.com/RlvNOLI.png" width="450" height="180">
+
+
+</center>
+
+				<p><strong>Example</strong>: Six friends want to play enough games of chess to be sure every one plays everyone else. How many games will they have to play?</p>
+
+
+				<p>Solution:</p>
+
+
+				<img src= "https://i.imgur.com/6qQEUg5.png" alt="The answer is 15." class="tab">
+
+
+
+				<p>To show what makes combination and permutation different, try the following example:</p>
+
+
+				<p><strong>Example</strong>: In a lottery, each ticket has 5 one-digit numbers 0-9 on it.</p>
+<center>
+<img src="https://www.ohiolottery.com/ohiolottery/media/ContentImages/MyLottoRewards/SecondChance/tickets.png" height="250" width="300">
+</center>
+
+				<p class="tab">I. You win if your ticket has the digits in any order. What are your chances of winning?</p>
+
+
+				<p class="tab">II. You would win only if your ticket has the digits in the required order. What are your chances of winning?</p>
+
+
+				<p>Solution to problem I:</p>
+
+
+				<img src="https://i.imgur.com/rwSQwBZ.png” class="tab">
+
+
+				<p>Solution to problem II:</p>
+
+				<p class="tab">P(10, 5) = 10 x 9 x 8 x 7 x 6 = 30240</p>
+
+
+				<p>When the order does not matter, your chance of winning is 1 in 252, but your chances of winning decrease to 1 in 30240 when order matters.</p>
+
+
+<hr>
+
+			<h1>Summary</h1>
+
+				<p>Counting is very important to learn and master. It may seem easy, but things like addition and multiplication for counting can sometimes be tricky.
+
+
+				Make sure to read the questions carefully and to understand what it is looking for. It may also help to have an image to look at for the questions so
+
+
+				don't be afraid to make one to help yourself. Once you understand what a counting problem is asking for, you can solve the problem with your newfound
+
+
+				knowledge of formulas and reasoning that we have shared with you.</p>
+
+
+<hr>
+				<p>Designed By: Ahsan Salik and Steven Su</p>
+
+		</article>								
+	</main>
+
+</html>

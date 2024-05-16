@@ -1,0 +1,12 @@
+{% extends "template.html" %}
+    {% block content %}
+    <h1>Welcome to my website!</h1>
+    <p>This website is essentially an interactive way to showcase the projects and skills I mention on my resume.</p>
+    
+    <h2>Below are links to all the pages you can access on this website:</h2>
+    <ul>
+        {% for link, description in links %}
+            <li><a href="{{ link }}">{{ description }}</a></li>
+        {% endfor %}
+    </ul>
+    {% endblock content%}

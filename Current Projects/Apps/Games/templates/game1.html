@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>{{ title }}</h1>
+    <div id="gameContainer" style="width: 320px; height: 480px; margin: auto;"></div>
+    <script type="text/javascript">
+        #First Cycle: Day
+        var skyImage = "{{ url_for('static', filename='images/background-day.png') }}";
+        var birdImage = "{{ url_for('static', filename='images/bluebird-midflap.png') }}";
+        var pipeImage = "{{ url_for('static', filename='images/pipe-red.png') }}";
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/phaser/3.55.2/phaser.min.js"></script>
+    <script src="{{ url_for('static', filename='flappy.js') }}"></script>
+</body>
+</html>

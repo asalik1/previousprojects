@@ -1,0 +1,17 @@
+{% extends "template.html" %}
+{% block content %}
+<h1>Ahsan's Projects</h1>
+{% for project in projects %}
+    <div class="project">
+        <!-- Clickable title -->
+        <h2 class="toggle" style="cursor: pointer;">{{ project["title"] }}</h2>
+        <!-- Collapsible content -->
+        <div class="content" style="display: none;">
+            <p>{{ project["description"] | safe }}</p>
+            {% if project["image"] %}
+                <img src="{{ url_for('static', filename=project.image) }}" alt="{{ project.title }}">
+            {% endif %}
+        </div>
+    </div>
+{% endfor %}
+{% endblock content %}

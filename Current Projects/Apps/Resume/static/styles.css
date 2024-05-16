@@ -1,0 +1,26 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    margin: 10px;
+    border: 2px solid #000;
+    border-radius: 10px;
+}
+
+.project {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.project img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 10px;
+}
+
+.toggle:hover {
+    color: #0056b3; /* Optional: change color on hover for better UX */
+}
